@@ -1,9 +1,10 @@
-# Model Card
-### Group_3 members
+# Model Card - Home Mortgage
+## Group_3 members
 Lu Li - luli@gwmail.gwu.edu
 Vi Pham - vipham91@gwu.edu
 Chengshu Yang - csyang6@gwu.edu
 Leqi Yin - yinleqi@gwu.edu
+
 ## Introduction
 ### Intended Use
 The model for this home mortgages data is designed to determine what specific conditions for a customer to receive high priced mortgages or not. Since the EBM model has better accuracy and more intelligibility, it could raise more revenue for real-world business companies such as insurance companies. Using this model, we could do many passes to train a small tree for many features which may be considered as potential price-affecting causes by the insurance company such as locations of the cars’ owner or years of cars. It is a very useful accurate model for large datasets with many features to analyze.
@@ -27,4 +28,15 @@ There are 112253 rows and 23 columns in Train data. The validation data contains
 
 ### Evaluation data
 The test data is a part of the Home Mortgage Disclosure Act data and is taken from hmda_test_preprocessed.zip,  which contains 19831 rows and 22 columns. This data set does not include the ‘high_priced’ column compared to the train data.
+
+## Performance
+### Model details
+In EDM model, we select the x values as inputs which are 'debt_to_income_ratio_std', 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std'. 
+For the target y values, we use binary values in the  ‘high_priced’ column.
+
+
+
+
+
+
 
