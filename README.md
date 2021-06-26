@@ -15,6 +15,7 @@ The training data is taken from Home Mortgage Disclosure Act data. The folder co
 The training data was divided into 70% training data and 30% validation data.
 There are 112253 rows and 23 columns in Train data. The validation data contains 48085 rows and 23 columns. Specific features used for model design are descripted as below:
 • high priced: Binary target, whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority homeowners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
+
 • conforming: Binary numeric input, whether the mortgage conforms to normal standards (1), or whether the loan is different (0), e.g., jumbo, HELOC, reverse mortgage, etc.
 • debt_to_income _ratio_std: Numeric input, standardized debt-to-income ratio for mortgage applicants.
 • debt_to_income_ratio_missing: Binary numeric input, missing marker (1) for debt to income ratio std.
@@ -38,6 +39,7 @@ For the target y values, we use binary values in the  ‘high_priced’ column.
 
 The picture shows the correlations between x values and y value.
 Among different interpretable models, the Explanation Boosting Machine using the ‘interpret’ package has been considered as the best remediated model because the model has the lowest test error and higher AUC.
+
 We need to install following softwares and libraries in our machine to be able to run EBM model:
 Python - Anaconda
 InterpretML package: https://github.com/interpretml/interpret
