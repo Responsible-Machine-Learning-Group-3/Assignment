@@ -35,7 +35,7 @@ The test data is a part of the Home Mortgage Disclosure Act data and is taken fr
 In EDM model, we select the x values as inputs which are 'debt_to_income_ratio_std', 'term_360', 'conforming', 'debt_to_income_ratio_missing', 'loan_amount_std', 'loan_to_value_ratio_std', 'no_intro_rate_period_std', 'intro_rate_period_std', 'property_value_std', 'income_std'. 
 For the target y values, we use binary values in the  ‘high_priced’ column.
 
-![Assignment 1 Correlation](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/1.png)
+![Correlation](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/1.png)
 
 The picture shows the correlations between x values and y value.
 Among different interpretable models, the Explanation Boosting Machine using the ‘interpret’ package has been considered as the best remediated model because the model has the lowest test error and higher AUC.
@@ -51,10 +51,19 @@ Our best remediated model has an AUC of 0.7752 on the training data and an AUC o
 Model interpretability:
 Global variable importance:
 
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/2.png)
 
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/3.png)
 
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/4.png)
 
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/5.png)
 
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/6.png)
+
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/7.png)
+
+![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/8.png)
 We also considered Elastic Net and Monotonic XGBoost for this project.
 
 ### Ethical considerations
