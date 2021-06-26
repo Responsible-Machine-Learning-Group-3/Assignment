@@ -48,6 +48,7 @@ We need to install following softwares and libraries in our machine to be able t
 * We use AUC and AIR scores to evaluate the best remediated model (EBM).
 * Our best remediated model has an AUC of 0.7752 on the training data and an AUC of 0.7709 on the validation data. AIR for Asian people vs. White people is 1.171. AIR for Black people vs. White people is 0.810. AIR for Females vs. Males is 0.955. 
 * Model interpretability:
+
 Global variable importance:
 
 ![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/2.png)
