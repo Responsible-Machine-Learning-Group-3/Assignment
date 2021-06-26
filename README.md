@@ -67,20 +67,21 @@ Recession simulation results:
 
 Global logloss residuals:
 ![Global logloss residuals](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/8.png)
-We also considered Elastic Net and Monotonic XGBoost for this project.
+
+* We also considered Elastic Net and Monotonic XGBoost for this project.
 
 ### Ethical considerations
 #### Potential negative impacts of using EBM  model: 
-Software problems: InterpretML package has some limitations on some Python package like python 32 bit
-Larger model may take longer time to run
+* Software problems: InterpretML package has some limitations on some Python package like python 32 bit
+* Larger model may take longer time to run
 
 #### Potential uncertainties:
-Consider real-world risks: although we remediated the model, it could still discriminate against people based on their demographics.
-Uncertainty 1: for people whose race and gender are more complex (e.g. mixed race, transgender), the model might produce results that deviate from the ones we saw, which leads to uncertainties.
-Uncertainty 2: the model could be difficult to reproduce (e.g. produce the exact same AUC and predictions) unless using a virtual machine.
+* Consider real-world risks: although we remediated the model, it could still discriminate against people based on their demographics.
+* Uncertainty 1: for people whose race and gender are more complex (e.g. mixed race, transgender), the model might produce results that deviate from the ones we saw, which leads to uncertainties.
+* Uncertainty 2: the model could be difficult to reproduce (e.g. produce the exact same AUC and predictions) unless using a virtual machine.
 
 #### Any unexpected or results encountered during training: 
-It could give a high test error result if we are not careful about the data splitting for training and validation data. 
+* It could give a high test error result if we are not careful about the data splitting for training and validation data. 
 
 
 
