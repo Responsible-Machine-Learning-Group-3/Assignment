@@ -35,6 +35,36 @@ In EDM model, we select the x values as inputs which are 'debt_to_income_ratio_s
 For the target y values, we use binary values in the  ‘high_priced’ column.
 
 
+The picture shows the correlations between x values and y value.
+Among different interpretable models, the Explanation Boosting Machine using the ‘interpret’ package has been considered as the best remediated model because the model has the lowest test error and higher AUC.
+We need to install following softwares and libraries in our machine to be able to run EBM model:
+Python - Anaconda
+InterpretML package: https://github.com/interpretml/interpret
+Installation: Python 3.6+ | Linux, Mac, Windows : pip install interpret
+
+### Quantitative analysis
+We use AUC and AIR scores to evaluate the best remediated model (EBM).
+Our best remediated model has an AUC of 0.7752 on the training data and an AUC of 0.7709 on the validation data. AIR for Asian people vs. White people is 1.171. AIR for Black people vs. White people is 0.810. AIR for Females vs. Males is 0.955. 
+Model interpretability:
+Global variable importance:
+
+
+
+
+
+We also considered Elastic Net and Monotonic XGBoost for this project.
+
+### Ethical considerations
+Potential negative impacts of using EBM  model: 
+Software problems: InterpretML package has some limitations on some Python package like python 32 bit
+Larger model may take longer time to run
+Potential uncertainties:
+Consider real-world risks: although we remediated the model, it could still discriminate against people based on their demographics.
+Uncertainty 1: for people whose race and gender are more complex (e.g. mixed race, transgender), the model might produce results that deviate from the ones we saw, which leads to uncertainties.
+Uncertainty 2: the model could be difficult to reproduce (e.g. produce the exact same AUC and predictions) unless using a virtual machine.
+Any unexpected or results encountered during training: 
+It could give a high test error result if we are not careful about the data splitting for training and validation data. 
+
 
 
 
