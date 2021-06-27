@@ -60,7 +60,7 @@ From the above global variable importance, we find that load_to_value_ratio_std 
 ![Partial dependence](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/4.png)
 
 #### AIR vs. AUC:
-We want to get the best combination for AIR vs. AUC. Best AUC: 0.7845 above 0.8 AIR (0.8056)
+We want to get the best combination for AIR vs. AUC. The best combination of AUC: 0.7845 above 0.8 AIR (0.8056) is the EBM model we choose to retrian. 
 ![AIR vs. AUC](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/5.png)
 
 #### Variable importance for stolen model:
@@ -69,6 +69,7 @@ Proper_value_std and intro_rate_period_std are two most important variables in s
 ![Variable importance for stolen model](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/9.png)
 
 #### Recession simulation results:
+Most variables drop in performance for recession conditions, which is normal for all. Monotonic GBM or penalized GLM will not perform better than EBM in these conditions.
 ![Recession simulation results](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/7.png)
 
 #### Global logloss residuals:
