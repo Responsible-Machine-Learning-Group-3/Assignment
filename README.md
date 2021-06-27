@@ -49,15 +49,18 @@ We need to install following softwares and libraries in our machine to be able t
 * Our best remediated model has an AUC of 0.7752 on the training data and an AUC of 0.7709 on the validation data. AIR for Asian people vs. White people is 1.171. AIR for Black people vs. White people is 0.810. AIR for Females vs. Males is 0.955. 
 * Model interpretability:
 
-  * Global variable importance: Load_to_value_ratio_std dominates the global feature importance. This means the model is placing too much importance on one variable, at least on average, and it will be a problem in the future. If values for this variable drift in the future or  this variable is missing for a customer, this will cause a huge impact on the whole. 
+#### Global variable importance: 
+Load_to_value_ratio_std dominates the global feature importance. This means the model is placing too much importance on one variable, at least on average, and it will be a problem in the future. If values for this variable drift in the future or  this variable is missing for a customer, this will cause a huge impact on the whole. 
 
 ![Global variable importance](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/2.png)
 
-   * Partial dependence: From the above global variable importance, we find that load_to_value_ratio_std dominates. If this variable has the steepest partial dependence curves, indicating that the model is very sensitive to load_to_value_ratio_std values and confirming the findings of the global Shapley feature importance chart above. However, term_360 and confirming get the steepest curves. 
+#### Partial dependence: 
+From the above global variable importance, we find that load_to_value_ratio_std dominates. If this variable has the steepest partial dependence curves, indicating that the model is very sensitive to load_to_value_ratio_std values and confirming the findings of the global Shapley feature importance chart above. However, term_360 and confirming get the steepest curves. 
 ![Partial dependence](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/3.png)
 ![Partial dependence](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/4.png)
 
-  * AIR vs. AUC:
+#### AIR vs. AUC:
+Best AUC: 0.7845 above 0.8 AIR (0.8056)
 ![AIR vs. AUC](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/5.png)
 
   * Variable importance for stolen model:
@@ -66,7 +69,8 @@ We need to install following softwares and libraries in our machine to be able t
   * Recession simulation results:
 ![Recession simulation results](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/7.png)
 
-  * Global logloss residuals:
+#### Global logloss residuals:
+Residuals are very unbalanced. This model struggles to predict when customers will recieve a high-priced loan correctly. It does much better when predicting customers will NOT receive a high-priced loan. There are also some very noticable outliers.
 ![Global logloss residuals](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/8.png)
 
 * We also considered Elastic Net and Monotonic XGBoost for this project.
