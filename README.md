@@ -60,17 +60,19 @@ From the above global variable importance, we find that load_to_value_ratio_std 
 ![Partial dependence](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/4.png)
 
 #### AIR vs. AUC:
-Best AUC: 0.7845 above 0.8 AIR (0.8056)
+We want to get the best combination for AIR vs. AUC. Best AUC: 0.7845 above 0.8 AIR (0.8056)
 ![AIR vs. AUC](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/5.png)
 
-  * Variable importance for stolen model:
+#### Variable importance for stolen model:
+Proper_value_std and intro_rate_period_std are two most important variables in stolen model. Based on its importance rate, we can get a basic flow chart for how the EBM works. This can be used as a sandbox for subsequent attacks. 
 ![Variable importance for stolen model](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/6.png)
+![Variable importance for stolen model](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/9.png)
 
-  * Recession simulation results:
+#### Recession simulation results:
 ![Recession simulation results](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/7.png)
 
 #### Global logloss residuals:
-Residuals are very unbalanced. This model struggles to predict when customers will recieve a high-priced loan correctly. It does much better when predicting customers will NOT receive a high-priced loan. There are also some very noticable outliers.
+Residuals are very unbalanced. This model struggles to predict when customers will recieve a high-priced loan correctly. It does much better when predicting customers will receive a non-high-priced loan. 
 ![Global logloss residuals](https://github.com/Responsible-Machine-Learning-Group-3/Assignment/blob/main/img/8.png)
 
 * We also considered Elastic Net and Monotonic XGBoost for this project.
